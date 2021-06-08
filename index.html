@@ -28,8 +28,8 @@
             <nav class="nav-bar">
                     <ul class="nav ">
                         <li class="nav-item"><a class="nav-link" href="#populares">Populares</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Novidades</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">No Cinema</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#novidades">Novidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nowPlaying">No Cinema</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
                         
                         <li class="search nav-item">
@@ -46,13 +46,13 @@
                             
                         </li>
                     </ul>
-                </nav>
+                </nav> 
             </div.logo>
         </div>
     </header>
-    <main>
+    <main class="col-12">
         <section  id="populares">
-                    <div id="carouselPopulares" class="carousel " data-pause="hover" data-ride="false" >
+                    <div id="carouselPopulares" class="carousel slide" data-pause="hover" data-ride="false" >
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselPopulares" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselPopulares" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -60,38 +60,55 @@
                             <button type="button" data-bs-target="#carouselPopulares" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div id="carouselItem1" class="carousel-item active ">
+                            <div id="carouselItem1" class="carousel-item active popularMovie">
                                 <div class="carousel-content d-inline-flex col-12 ">
                                     <div class="vazio col-1"></div>
                                     <div class="movie-text col-4 ">
+                             
                                         <h1 class="movie-title">Titulo 1</h1>
+                                        <div class="classificacao notaPopular col-12">
+                                            <p>Classificação: </p>
+                                            <p class="notaFilme ">0.0</p>
+                                        </div>
                                         <p class="movie-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, molestias rerum eum laboriosam reprehenderit animi atque consequatur nulla eos dicta nobis ab expedita quae unde dolor similique voluptates maxime ullam?</p>
                                     </div>
                                 </div>
                             </div>
-                            <div id="carouselItem2" class="carousel-item  ">
+                            <div id="carouselItem2" class="carousel-item  popularMovie">
                                 <div class="carousel-content d-inline-flex col-12 ">
                                     <div class="vazio col-1"></div>
                                     <div class="movie-text col-4 ">
                                         <h1 class="movie-title">Titulo 2</h1>
+                                        <div class="classificacao notaPopular col-12">
+                                            <p>Classificação: </p>
+                                            <p class="notaFilme ">0.0</p>
+                                        </div>
                                         <p class="movie-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, molestias rerum eum laboriosam reprehenderit animi atque consequatur nulla eos dicta nobis ab expedita quae unde dolor similique voluptates maxime ullam?</p>
                                     </div>
                                 </div>
                             </div>
-                            <div id="carouselItem3" class="carousel-item  ">
+                            <div id="carouselItem3" class="carousel-item  popularMovie">
                                 <div class="carousel-content d-inline-flex col-12 ">
                                     <div class="vazio col-1"></div>
                                     <div class="movie-text col-4 ">
                                         <h1 class="movie-title">Titulo 3</h1>
+                                        <div class="classificacao notaPopular col-12">
+                                            <p>Classificação: </p>
+                                            <p class="notaFilme">0.0</p>
+                                        </div>
                                         <p class="movie-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, molestias rerum eum laboriosam reprehenderit animi atque consequatur nulla eos dicta nobis ab expedita quae unde dolor similique voluptates maxime ullam?</p>
                                     </div>
                                 </div>
                             </div>
-                            <div id="carouselItem4" class="carousel-item  ">
+                            <div id="carouselItem4" class="carousel-item  popularMovie">
                                 <div class="carousel-content d-inline-flex col-12 ">
                                     <div class="vazio col-1"></div>
                                     <div class="movie-text col-4 ">
                                         <h1 class="movie-title">Titulo 4</h1>
+                                        <div class="classificacao notaPopular col-12">
+                                            <p>Classificação: </p>
+                                            <p class="notaFilme ">0.0</p>
+                                        </div>
                                         <p class="movie-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, molestias rerum eum laboriosam reprehenderit animi atque consequatur nulla eos dicta nobis ab expedita quae unde dolor similique voluptates maxime ullam?</p>
                                     </div>
                                 </div>
@@ -108,6 +125,45 @@
                           </button>
                     </div>
         </section>
+
+        <section id="nowPlaying" class="col-12">
+            <div class="container">
+                    <div class="row sectionHeader">
+                        <h1 class="col-12 text-uppercase">No Cinema</h1>
+                    </div>
+
+                <div class="row">
+                    <div id="carousel-nowPlaying" class="carousel slide" data-pause="hover" data-ride="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel-nowPlaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel-nowPlaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel-nowPlaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel-nowPlaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div id="carouselNPItem1" class="carousel-item active ">
+                                <div class="">
+                                    
+                                </div>
+                            </div>
+                            <div id="carouselNPItem2" class="carousel-item  ">
+                                <div class="">
+                                    
+                                </div>
+                            </div>
+                            <div id="carouselNPItem3" class="carousel-item  ">
+                                <div class="">
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
     </main>
 
 
@@ -116,6 +172,8 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
    <script src="/js/index.js"></script>
-   <script src="/js/getPopular.js"></script>
+   <script src="/js/getPopularMovies.js"></script>
+   <script src="/js/getLatestMovies.js"></script>
+   
 </body>
 </html>

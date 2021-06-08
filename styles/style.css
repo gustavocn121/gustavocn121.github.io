@@ -7,7 +7,7 @@ ul {
   list-style: none;
 }
 header {
-  background-color: #1b1717;
+  background-color: #110f0f;
   height: 80px;
   margin: 0 50%;
 }
@@ -19,11 +19,11 @@ header {
   height: 55px;
 }
 .nav-link {
-  color: #b80808;
+  color: #eeebdde5;
 }
 
 .nav-link:hover {
-  color: #a75353;
+  color: #b80808;
 }
 
 .search {
@@ -80,34 +80,74 @@ header {
   background-color: #eeebdd;
 }
 
+#carouselItem1 {
+  background-color: #1b1717;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .carousel-content {
   height: 100vh;
 }
 
-#carouselItem1 {
-  background-color: royalblue;
+.carousel-content:before {
+  z-index: 1;
 }
-#carouselItem2 {
-  background-color: saddlebrown;
+
+.carousel-item {
+  background-color: #110f0f;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-#carouselItem3 {
-  background-color: salmon;
-}
-#carouselItem4 {
-  background-color: coral;
-}
-.carousel-indicators {
+
+#carouselPopulares .carousel-indicators {
   margin-bottom: 100px;
 }
 .movie-text {
-  border: salmon 2px solid;
+  color: #ffffff;
+  text-shadow: 2px 2px #110f0f;
+  margin-left: 35px;
 }
 .movie-title {
   margin-top: 150px;
-  border: solid green 1px;
+}
+.notaPopular {
+  margin-top: 50px;
+  font-size: 14px;
 }
 
 .movie-desc {
   align-self: center;
-  margin-top: 130px;
+  margin-top: 80px;
+
+  color: #eeebdd;
+  text-shadow: 2px 2px #110f0f;
+}
+
+.classificacao {
+  color: #eeebdd;
+}
+
+.notaFilme {
+  color: gold;
+}
+
+.sectionHeader {
+  height: 15vh;
+  padding-top: 3vh;
+  padding-left: 5vh;
+  color: #eeebdd;
+
+  text-align: start;
+}
+
+#carousel-nowPlaying .carousel-item {
+  height: vh;
+}
+
+#nowPlaying,
+#nowPlaying * {
+  background-color: #1a1616;
 }
