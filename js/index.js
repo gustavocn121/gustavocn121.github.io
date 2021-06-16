@@ -2,7 +2,7 @@ $("body").css("background-color", "#eeebdd");
 $(".form-outline").hide();
 
 $("#search-btn").click(() => {
-  // $(".form-outline").toggle();
+  console.log("aaa");
   $(".form-outline").animate({ width: "toggle" }, 350);
   var element = document.getElementById("search-btn"),
     style = window.getComputedStyle(element),
@@ -26,4 +26,15 @@ $("#searchbar-inpt").change((e) => {
   console.log(filmeBuscar);
 });
 
-$("#populares").css("background-img");
+$(".burguer").click(() => {
+  var menu = $(".menuBurguer");
+  var altura = parseInt(
+    menu.css("height").substring(0, menu.css("height").length - 2)
+  );
+  if (altura > 0) {
+    menu.animate({ height: "toggle" }, 0);
+  }
+  if ((altura = 0)) {
+    menu.animate({ height: "toggle" }, 0);
+  }
+});
