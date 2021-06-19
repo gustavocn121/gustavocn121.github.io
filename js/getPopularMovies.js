@@ -48,6 +48,11 @@ function loadPopularMovies(rurl) {
           }
         }
         remove.push(numAleatorio);
+        var cr_bt = `#popBtn${i}`;
+        var link = `https://themoviedb.org/movie/${results[numAleatorio].id}`;
+
+        document.querySelector(cr_bt).setAttribute("href", link);
+        document.querySelector(cr_bt).setAttribute("target", "_blank");
         $(".movie-title")[i].innerHTML = results[numAleatorio].title;
         $(".movie-desc")[i].innerHTML = results[numAleatorio].overview;
         $(".notaPopular .notaFilme")[i].innerHTML =
@@ -59,7 +64,7 @@ function loadPopularMovies(rurl) {
           "https://image.tmdb.org/t/p/original" +
           results[numAleatorio].backdrop_path;
         bgimg =
-          'linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("' +
+          'linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.6)), url("' +
           bgURL +
           '")';
 

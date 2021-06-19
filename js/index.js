@@ -46,6 +46,7 @@ $("#searchbar-inpt2 ").keyup(function (e) {
 
 $(".burguer").click(() => {
   var menu = $(".menuBurguer");
+
   var altura = parseInt(
     menu.css("height").substring(0, menu.css("height").length - 2)
   );

@@ -264,16 +264,19 @@ footer ul li,
   }
   #carouselPopulares,
   .carousel-inner {
-    height: 130vh;
+    height: 180vh;
   }
   .movie-text {
     margin-top: 0px;
   }
   .movie-title {
-    margin-top: 30px;
+    margin-top: 7px;
   }
   .carousel-indicators {
     display: none;
+  }
+  .movie-desc {
+    margin-top: 0;
   }
 }
 
@@ -291,9 +294,19 @@ footer ul li,
     height: 350px;
   }
   .movie-text {
-    width: 70%;
-    font-size: 15px;
+    width: 85%;
+    margin-left: 0px;
+
     margin-top: 0px;
+  }
+  .movie-text * {
+    font-size: medium;
+  }
+  .movie-title {
+    font-size: x-large;
+  }
+  .notaPopular {
+    margin-top: 5px;
   }
 }
 
