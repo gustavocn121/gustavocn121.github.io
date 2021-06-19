@@ -32,6 +32,18 @@ $("#searchbar-inpt").keyup(function (e) {
   }
 });
 
+$("#searchbar-inpt2").bind("enterKey", function (e) {
+  var page =
+    "searchPage.html?movie=" + document.querySelector("#searchbar-inpt2").value;
+  redirectPage(page);
+});
+
+$("#searchbar-inpt2 ").keyup(function (e) {
+  if (e.keyCode == 13) {
+    $(this).trigger("enterKey");
+  }
+});
+
 $(".burguer").click(() => {
   var menu = $(".menuBurguer");
   var altura = parseInt(
