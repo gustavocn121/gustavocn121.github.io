@@ -69,7 +69,7 @@ function loadSearchResults() {
           var bgURL =
             "https://image.tmdb.org/t/p/original" + results[i].backdrop_path;
 
-          var bgImg = `linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.2)), url("${bgURL}")`;
+          var bgImg = `linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.5)), url("${bgURL}")`;
           $(it).css("background-image", bgImg);
 
           var imgUrl =
