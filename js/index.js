@@ -2,7 +2,6 @@ $("body").css("background-color", "#eeebdd");
 $(".form-outline").hide();
 
 $("#search-btn").click(() => {
-  console.log("aaa");
   $(".form-outline").animate({ width: "toggle" }, 350);
   var element = document.getElementById("search-btn"),
     style = window.getComputedStyle(element),
@@ -21,9 +20,16 @@ function redirectPage(link) {
   window.location.replace(link);
 }
 
-$("#searchbar-inpt").change((e) => {
-  var filmeBuscar = e.target.value;
-  console.log(filmeBuscar);
+$("#searchbar-inpt").bind("enterKey", function (e) {
+  var page =
+    "searchPage.html?movie=" + document.querySelector("#searchbar-inpt").value;
+  redirectPage(page);
+});
+
+$("#searchbar-inpt").keyup(function (e) {
+  if (e.keyCode == 13) {
+    $(this).trigger("enterKey");
+  }
 });
 
 $(".burguer").click(() => {
