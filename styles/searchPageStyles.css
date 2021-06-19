@@ -1,6 +1,7 @@
 main {
   background-color: #1a1616;
   height: 100vh;
+  color: #eeebdd;
 }
 #resultadosBusca {
   border: brown solid 2px;
@@ -9,6 +10,21 @@ main {
   display: flex;
   justify-content: space-between;
 }
-#resultadosBusca div {
-  border: chartreuse 2px solid;
+
+.resultadoItem {
+  border: blue solid 2px;
+}
+
+.resultadoImg {
+  height: 300px;
+  background-image: url("https://image.tmdb.org/t/p/original/ljPHd7WiPVKmuXi1hgQUpZQslbC.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.resultadoTitle {
+  text-align: center;
+  border: blueviolet 2px solid;
+}
+.resultadoBtn {
 }
