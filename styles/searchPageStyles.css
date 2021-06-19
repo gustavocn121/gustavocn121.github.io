@@ -1,14 +1,41 @@
-main {
+body {
   background-color: #1a1616;
-  height: 100vh;
+}
+main {
+  color: aliceblue;
+  height: fit-content;
+  background-color: #1a1616;
+  padding: 15px 0;
+  width: max-content;
 }
 #resultadosBusca {
-  border: brown solid 2px;
   margin-top: 20px;
-  height: 85vh;
+  height: fit-content;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  text-align: center;
 }
-#resultadosBusca div {
-  border: chartreuse 2px solid;
+
+.msgErro h1 {
+  font-size: medium;
+}
+.resultadoItem {
+  height: fit-content;
+  border-radius: 15px;
+  margin-top: 20px;
+  background-color: rgba(54, 54, 54, 0.2);
+  padding: 15px;
+}
+.resultadoImg {
+  height: 250px;
+  margin-right: 20px;
+  align-self: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.resultadoText * {
+  margin-top: 7px;
 }
