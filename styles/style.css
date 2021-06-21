@@ -54,9 +54,10 @@ header {
   width: 25px;
   height: 25px;
   margin-left: 5px;
+  background-color: rgba(250, 250, 250, 0.1);
 }
 #search-btn:hover {
-  background-color: rgba(250, 250, 250, 0.05);
+  background-color: rgba(250, 250, 250, 0.5);
 }
 #search-btn:focus {
   box-shadow: none;
